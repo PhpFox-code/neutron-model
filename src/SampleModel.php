@@ -33,11 +33,11 @@ class SampleModel
 
     public function delete()
     {
-        service('tables')->delete('sample', $this->getId());
+        service('models')->delete('sample', $this->getId());
     }
 
     public function save()
     {
-        service('tables')->delete('sample', $this->getId());
+        service('models')->delete('sample', $this->getId());
     }
 }

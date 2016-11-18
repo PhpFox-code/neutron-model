@@ -2,8 +2,12 @@
 
 namespace Phpfox\Model;
 
-use Phpfox\Db\GatewayInterface;
 
+/**
+ * Class GatewayManager
+ *
+ * @package Phpfox\Model
+ */
 class GatewayManager implements GatewayManagerInterface
 {
     /**
@@ -16,7 +20,7 @@ class GatewayManager implements GatewayManagerInterface
      */
     protected $map = [];
 
-    public function set($id, GatewayInterface $gateway)
+    public function set($id, $gateway)
     {
         $this->gateways[$id] = $gateway;
         return $this;

@@ -1,8 +1,6 @@
 <?php
 namespace Phpfox\Model;
 
-use Phpfox\Db\GatewayInterface;
-
 interface GatewayManagerInterface
 {
     /**
@@ -24,12 +22,12 @@ interface GatewayManagerInterface
     public function build($id);
 
     /**
-     * @param string           $id
-     * @param GatewayInterface $gateway
+     * @param string                 $id
+     * @param mixed|GatewayInterface $gateway
      *
      * @return $this
      */
-    public function set($id, GatewayInterface $gateway);
+    public function set($id, $gateway);
 
     /**
      * @param string $id
