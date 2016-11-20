@@ -3,6 +3,8 @@ namespace Phpfox\Model;
 
 return [
     'services' => [
-        'models' => GatewayManager::class,
+        'map' => [
+            'models' => [null, GatewayManager::class,],
+        ],
     ],
 ];
