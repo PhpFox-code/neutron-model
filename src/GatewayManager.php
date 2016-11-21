@@ -20,6 +20,11 @@ class GatewayManager implements GatewayManagerInterface
      */
     protected $map = [];
 
+    public function __construct()
+    {
+        $this->map = config('models');
+    }
+
     public function set($id, $gateway)
     {
         $this->gateways[$id] = $gateway;
