@@ -55,12 +55,12 @@ class GatewayManager implements GatewayManagerInterface
             throw new GatewayException("gateway `$id` does not exists");
         }
 
-        list($gateway, $modelClass, $adapter, $table) = $this->map[$id];
+        list($gateway, $modelClass, $collection, $adapter) = $this->map[$id];
 
         if (!class_exists($gateway) || !class_exists($modelClass)) {
             throw new GatewayException("gateway `$id` does not exists");
         }
 
-        return new $gateway($table, $modelClass, $adapter, $id);
+        return new $gateway($collection, $modelClass, $id, $adapter);
     }
 }
