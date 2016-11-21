@@ -12,12 +12,12 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "Phpfox\\Db\\": "src/"
+      "Phpfox\\Model\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Phpfox\\Db\\": "test/"
+      "Phpfox\\Model\\": "test/"
     }
   }
 }
