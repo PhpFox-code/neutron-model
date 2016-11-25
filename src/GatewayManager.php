@@ -13,7 +13,7 @@ class GatewayManager implements GatewayManagerInterface
     /**
      * @var GatewayInterface[]
      */
-    protected $gateways = [];
+    protected $container = [];
 
     /**
      * @var string[]
@@ -27,7 +27,7 @@ class GatewayManager implements GatewayManagerInterface
 
     public function set($id, $gateway)
     {
-        $this->gateways[$id] = $gateway;
+        $this->container[$id] = $gateway;
         return $this;
     }
 
@@ -43,8 +43,8 @@ class GatewayManager implements GatewayManagerInterface
      */
     public function get($id)
     {
-        return isset($this->gateways[$id]) ? $this->gateways[$id]
-            : $this->gateways[$id] = $this->build($id);
+        return isset($this->container[$id]) ? $this->container[$id]
+            : $this->container[$id] = $this->build($id);
     }
 
     public function build($id)
