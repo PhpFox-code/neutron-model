@@ -1,5 +1,5 @@
 {
-  "name": "codelego/phpfox-model",
+  "name": "codelego/neutron-model",
   "description": "Model gateway library for phpfox framework.",
   "type": "library",
   "license": "MIT",
