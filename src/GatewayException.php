@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpfox\Model;
+namespace Neutron\Model;
 
 class GatewayException extends \Exception
 {

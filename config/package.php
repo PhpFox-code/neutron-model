@@ -1,5 +1,5 @@
 <?php
-namespace Phpfox\Model;
+namespace Neutron\Model;
 
 return [
     'services' => [

@@ -1,11 +1,11 @@
 <?php
 
-namespace Phpfox\Model;
+namespace Neutron\Model;
 
 /**
  * Interface ModelInterface
  *
- * @package Phpfox\Model
+ * @package Neutron\Model
  */
 interface ModelInterface
 {

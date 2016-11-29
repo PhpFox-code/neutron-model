@@ -1,12 +1,12 @@
 <?php
 
-namespace Phpfox\Model;
+namespace Neutron\Model;
 
 
 /**
  * Class GatewayManager
  *
- * @package Phpfox\Model
+ * @package Neutron\Model
  */
 class GatewayManager implements GatewayManagerInterface
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Phpfox\Model;
+namespace Neutron\Model;
 
 /**
  * Class GatewayInterface
  *
- * @package Phpfox\Model
+ * @package Neutron\Model
  */
 interface GatewayInterface
 {
